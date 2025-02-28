@@ -9,40 +9,42 @@
 \def\theme{MidnightBlue}
 
 \usepackage{simplecv}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb} % Provides \varnothing
 
 \boldname{Cetin}{Doruk}{D.}
 
 \begin{document}
 
 % Heading
-\headinginline{Doruk Çetin}{
-    \faEnvelope: \email{doruk.cetin.dc@gmail.com} \\
-    \faGlobe: \website{dcetin.me} 
-    % \faLinkedin: \linkedin{doruk-cetin} 
-    \faGithub: \github{dcetin}
-}
+%\headinginline{Hannes Frey}{
+%    \faEnvelope: \email{info@hfrey.de} \\
+%    %\faGithub: \website{Hannes5612} 
+%    \faLinkedin: \linkedin{hannesfrey} 
+%    \faGithub: \github{Hannes5612}
+%}
 
-% \headingphoto{Doruk Çetin}{
-%     Website: \website{dcetin.me} \\ 
-%     Email: \email{dcetin@ethz.ch} \\
-%     % LinkedIn: \linkedin{doruk-cetin} \\
-%     GitHub: \github{dcetin}
-% }{photo.png}
+ \headingphoto{Hannes Frey}{
+     
+     Anschrift: Schwabstraße 7, 70197 Stuttgart \\
+     Geburtsdatum: 01.02.1999 \\
+     Mobil: 0176 / 41764476 \\ 
+     Email: \email{info@hfrey.de} \\
+      LinkedIn: \linkedin{hannesfrey} \\
+     GitHub: \github{Hannes562}
+ }{../image.png}
 
 % Page One
 \import{sections/}{education.tex}
 \import{sections/}{experience.tex}
-\import{sections/}{publications.tex}
 
-\pagebreak
+%\pagebreak
 
 % Page Two
-\import{sections/}{teaching.tex}
 \sidebyside
     {\import{sections/}{skills.tex}}
     {\import{sections/}{languages.tex}}
-\import{sections/}{projects.tex}
-\import{sections/}{awards.tex}
-\import{sections/}{volunteering.tex}
+%\import{sections/}{projects.tex}
+%\import{sections/}{volunteering.tex}
 
 \end{document}
