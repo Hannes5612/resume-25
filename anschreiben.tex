@@ -1,0 +1,58 @@
+\documentclass[DIN, pagenumber=false, parskip=half,%
+               fromalign=right, 
+               fromrule=false]{scrlttr2}
+
+
+\usepackage{ngerman}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\RequirePackage{graphicx}
+
+ 
+% if you have a word with just uppercase letter you should use the package soul
+% for better readability
+\usepackage{soul}
+\sodef\so{}{.14em}{.4em plus.1em minus .1em}{.4em plus.1em minus .1em}
+
+ 
+ % do not indent the signature
+\renewcommand*{\raggedsignature}{\raggedright} 
+
+ % the sender:
+\setkomavar{fromname}{Hannes Frey}
+\setkomavar{fromaddress}{Schwabstraße 7 \\ 70197 Stuttgart}
+\setkomavar{signature}{}
+
+ 
+\begin{document}
+ 
+% the receiver:
+\begin{letter}{\so{Amt für Digitalisierung, Organisation und IT} \\ Heilbronner Str. 150 \\ 70191 Stuttgart}
+
+
+%===================================
+\enlargethispage{5cm}
+
+
+\opening{Sehr geehrte Damen und Herren,}
+
+mit großem Interesse habe ich Ihre Stellenausschreibung gelesen. Aufgrund meiner bisherigen beruflichen Erfahrungen und meines Studium  sehe ich mich als idealen Kandidaten für diese Position. Besonders die verantwortungsvolle Arbeit im Serverbetrieb sowie die Weiterentwicklung der zentralen Infrastruktur reizen und interessieren mich sehr.
+
+Ich absolviere aktuell meinen Master in Computer Science \& Media an der Hochschule der Medien Stuttgart und habe mehrjährige Erfahrung in IT-Administration und DevOps. Durch mein Praxissemester und meine Werkstudententätigkeit konnte ich fundierte Kenntnisse in Kubernetes, CI/CD-Pipelines sowie Server- und Netzwerkadministration erwerben. Ich bin vertraut mit Linux, Docker, Kubernetes sowie der Wartung von Server- und Storage-Infrastrukturen. Zudem habe ich privat Erfahrung mit Proxmox und Netzwerkprotokollen wie DNS, NFS und CIFS/Samba gesammelt und meine analytischen sowie problemlösenden Fähigkeiten vielfach unter Beweis gestellt.
+
+Ich schätze die Möglichkeit, in einem dynamischen und zukunftsorientierten Umfeld zu arbeiten, und bringe eine hohe Eigenmotivation sowie Teamfähigkeit mit. Die Aussicht, meine Kenntnisse und Erfahrungen in der IT-Infrastruktur der Stadt Stuttgart einzubringen und an innovativen Lösungen für eine moderne Stadtverwaltung mitzuwirken, begeistert mich besonders.
+
+Gerne stelle ich mich Ihnen in einem persönlichen Gespräch vor und freue mich auf die Möglichkeit, meine Qualifikationen und meine Motivation weiter zu erläutern.
+
+\closing{Mit freundlichen Grüßen}
+
+
+%===================================
+\setkomavar*{enclseparator}{Anlage} 
+%\encl{Angebotsausarbeitung}
+
+
+\end{letter}
+ 
+\end{document}
